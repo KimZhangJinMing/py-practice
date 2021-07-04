@@ -5,7 +5,7 @@ from aiohttp import web
 # 设置日志级别
 logging.basicConfig(level=logging.INFO)
 
-# hadler的request参数不能少
+# handler的request参数不能少
 def index(request):
     return web.Response(body=b'<h1>Index</h1>',content_type="text/html",charset="utf-8")
 

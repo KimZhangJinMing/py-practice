@@ -1,8 +1,9 @@
 import aiomysql
 import logging
 
-logging.basicConfig(level=logging.info)
-__pool
+# level是字符串,大写的INFO才是字符串
+logging.basicConfig(level=logging.INFO)
+__pool = None
 
 # 创建数据库连接池
 async def create_pool(loop, **kw):
